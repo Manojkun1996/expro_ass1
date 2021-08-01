@@ -1,5 +1,5 @@
 # Assignment 1 - EXPRO
-# Behavioral Architecture
+# Architecture
 Let us consider a simulating pet robot, MIRO, which interacts with a human and moves in a certain 2D environment. 
 The robot may have three behaviors : 
 1. normal - In this mode, the robot moves randomly
