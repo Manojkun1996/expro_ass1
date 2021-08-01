@@ -13,7 +13,7 @@ The system is composed by 3 nodes:
 The rqt_graph is showed.
 ![image]
 ## Commander node
-The node simulates user action. Firstly it chooses randomly what the robot must perform: sleep or play. The command (std_msgs/String) is published on a Topic ("/Command"). In case the play behavior is selected, the node generates randomly the location of the user and the Pointing Gesture. These poses (geometry_msgs/Point) are published on two topics ("/PersonPosition" and "/PointingGesture").
+The node simulates user action. Firstnof all it chooses randomly what the robot has to perform either sleep or play. The command (std_msgs/String) is published on a Topic ("/Command"). In case the play behavior is selected, the node generates randomly the location of the user and the Pointing Gesture. These poses (geometry_msgs/Point) are published on two topics ("/PersonPosition" and "/PointingGesture").
 
 ## State machine node
 The node implements a state machine in which the three possible behaviors are defined.
@@ -62,12 +62,12 @@ During the execution of one state, after giving a target, the robot waits for a 
 System's features
 The sys can show on the terminal what the robot is doing and the what the behavior's state is executing.
 
-## System's Limitations
+## Limitations
 The user actions is randomly defined by the system, and there exists neither a real relationship with the user nor a real pointing gesture. The robot has not a velocity to get him desired target position, and there is not a real simulator to view if the target is achieved.
 
 ## Possible technical Improvements
 A possible technical improvements may be:
 
-create a real interaction with the user;
-Implement a real velocity to change the odometry of the robot;
-Implement a simulator (like Gazebo, Stage, Turtlesim,...)
+An interaction with the user can be created
+We can Implement a real velocity to change the odometry of the robot
+A simulator like turtlebot, Gazeboo can be used,
