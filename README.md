@@ -1,8 +1,16 @@
 # Assignment 1 - EXPRO
 # Behavioral Architecture
-Assuming a Robot, simulating a pet, that interacts with a human and moves in a discrete 2D environment. The robot may have three behaviors : normal (in which it moves randomly), sleep (in which it gets the home position, sleeps for a time and returns in normal behavior) and play (in which it goes in person location, waits for a poiting gesture, goes in the pointed location, comes back to the person and waits for the next pointing gestures. After some time it returns to the normal behavior). The human can interact by pointing gestures and speech.
+Let us consider a simulating pet robot, MIRO, which interacts with a human and moves in a certain 2D environment. 
+The robot may have three behaviors : 
+1. normal - In this mode, the robot moves randomly
+2. sleep - In this mode, it gets to its home position then it sleeps for some time and returns to its normal behavior
+3. play- In this mode, it goes to person location, waits for a poiting gesture, goes in the pointed location, comes back to the person and waits for the next pointing gestures. After some time it returns to the normal behavior)
 ## ROS Architecture
-The system is composed by 3 nodes:"Commander" node, "state_machine" node and "Display" node, and a Launch file. The rqt_graph is showed.
+The system is composed by 3 nodes:
+"Commander" node
+"state_machine" node
+"Display" node, and a Launch file. 
+The rqt_graph is showed.
 ![image]
 ## Commander node
 The node simulates user action. Firstly it chooses randomly what the robot must perform: sleep or play. The command (std_msgs/String) is published on a Topic ("/Command"). In case the play behavior is selected, the node generates randomly the location of the user and the Pointing Gesture. These poses (geometry_msgs/Point) are published on two topics ("/PersonPosition" and "/PointingGesture").
