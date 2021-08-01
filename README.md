@@ -64,12 +64,3 @@ During the execution of one state, after giving a target, the robot waits for a 
 System's features
 The sys can show on the terminal what the robot is doing and the what the behavior's state is executing.
 
-## Limitations
-The user actions is randomly defined by the system, and there exists neither a real relationship with the user nor a real pointing gesture. The robot has not a velocity to get him desired target position, and there is not a real simulator to view if the target is achieved.
-
-## Possible technical Improvements
-A possible technical improvements may be:
-
-An interaction with the user can be created
-We can Implement a real velocity to change the odometry of the robot
-A simulator like turtlebot, Gazeboo can be used,
