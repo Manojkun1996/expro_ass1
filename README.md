@@ -11,7 +11,7 @@ The system is composed by 3 nodes:
 "state_machine" node
 "Display" node, and a Launch file. 
 The rqt_graph is showed.
-![image]
+![image](Fig1.png)
 ## Commander node
 The node simulates user action. Firstnof all it chooses randomly what the robot has to perform either sleep or play. The command (std_msgs/String) is published on a Topic ("/Command"). In case the play behavior is selected, the node generates randomly the location of the user and the Pointing Gesture. These poses (geometry_msgs/Point) are published on two topics ("/PersonPosition" and "/PointingGesture").
 
